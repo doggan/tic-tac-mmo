@@ -1,0 +1,35 @@
+{
+  "name": "tic-tac-toe-mmo",
+  "private": true,
+  "version": "0.0.0",
+  "description": "A tic-tac-toe MMO.",
+  "main": "index.js",
+  "scripts": {
+    "start": "beefy index.js --cwd ./client/",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "tic-tac-toe",
+    "mmo"
+  ],
+  "homepage": "https://github.com/doggan/tic-tac-toe-mmo",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/doggan/tic-tac-toe-mmo.git"
+  },
+  "bugs": {
+    "url": "https://github.com/doggan/tic-tac-toe-mmo/issues"
+  },
+  "author": {
+    "name": "Shyam Guthikonda",
+    "url": "http://shy.am"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "component-engine": "doggan/component-engine"
+  },
+  "jshintConfig": {
+    "node": true,
+    "unused": true
+  }
+}
