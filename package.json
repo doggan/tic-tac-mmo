@@ -26,7 +26,8 @@
   },
   "license": "MIT",
   "dependencies": {
-    "component-engine": "doggan/component-engine"
+    "component-engine": "doggan/component-engine",
+    "inherits": "^2.0.1"
   },
   "jshintConfig": {
     "node": true,

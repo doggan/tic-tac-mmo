@@ -2,20 +2,26 @@
 
 var ComponentEngine = require('component-engine').Engine;
 
+var engine;
+
 document.addEventListener("DOMContentLoaded", function() {
-    var engine = new ComponentEngine({
-        clearColor: 0xDEDEDE
+    engine = new ComponentEngine({
+        clearColor: 0x000000
     });
+    engine.camera.position.z = 500;
 
-    var THREE = engine.THREE;
-
-    engine.on('update', function() {
-
-    });
-
-    engine.on('render', function() {
-        // DbgDraw.render(engine.scene);
-    });
+    createGame();
 
     engine.run();
 });
+
+var Entity = require('component-engine').Entity;
+
+function createGame() {
+    var GameComponent = require('./lib/game_component');
+
+    var entity = new Entity(engine);
+    entity.addComponent(new GameComponent(entity));
+
+    return entity;
+}
