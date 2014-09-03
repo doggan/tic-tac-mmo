@@ -12,6 +12,12 @@ document.addEventListener("DOMContentLoaded", function() {
 
     createGame();
 
+    // TODO: temporary controls
+    var controls = new THREE.OrbitControls(engine.camera);
+    engine.on('update', function() {
+        controls.update();
+    });
+
     engine.run();
 });
 
