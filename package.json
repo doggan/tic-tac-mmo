@@ -6,7 +6,7 @@
   "main": "index.js",
   "scripts": {
     "start": "beefy index.js --cwd ./client/",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha --reporter spec"
   },
   "keywords": [
     "tic-tac-toe",
@@ -32,5 +32,9 @@
   "jshintConfig": {
     "node": true,
     "unused": true
+  },
+  "devDependencies": {
+    "chai": "^1.9.1",
+    "mocha": "^1.21.4"
   }
 }
