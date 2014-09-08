@@ -2,7 +2,7 @@ tic-tac-toe
 ===============
 A basic Tic Tac Toe sandbox for experimenting with various libraries and ideas.
 
-Play online: [View Example](http://doggan.github.io/tic-tac-toe/example/index.html)
+Play online: [View Example](http://doggan.github.io/tic-tac-toe/client/index.html)
 
 ## Usage
  * Open your browser developer console to see log messages.
