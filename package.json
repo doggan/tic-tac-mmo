@@ -1,24 +1,23 @@
 {
-  "name": "tic-tac-toe-mmo",
+  "name": "tic-tac-toe",
   "private": true,
   "version": "0.0.0",
-  "description": "A tic-tac-toe MMO.",
+  "description": "A tic-tac-toe sandbox.",
   "main": "index.js",
   "scripts": {
     "start": "beefy index.js --cwd ./client/",
     "test": "mocha --reporter spec"
   },
   "keywords": [
-    "tic-tac-toe",
-    "mmo"
+    "tic-tac-toe"
   ],
-  "homepage": "https://github.com/doggan/tic-tac-toe-mmo",
+  "homepage": "https://github.com/doggan/tic-tac-toe",
   "repository": {
     "type": "git",
-    "url": "https://github.com/doggan/tic-tac-toe-mmo.git"
+    "url": "https://github.com/doggan/tic-tac-toe.git"
   },
   "bugs": {
-    "url": "https://github.com/doggan/tic-tac-toe-mmo/issues"
+    "url": "https://github.com/doggan/tic-tac-toe/issues"
   },
   "author": {
     "name": "Shyam Guthikonda",
