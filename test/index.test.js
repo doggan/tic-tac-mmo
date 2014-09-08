@@ -83,7 +83,7 @@ describe('minimax evaluation function', function() {
         boardInfo.cells[1][0] = Marker.O;
         boardInfo.cells[2][0] = Marker.O;
 
-        expect(AiPlayer.evaluateScore(boardInfo, Marker.O)).to.equal(10);
+        expect(AiPlayer.evaluateScore(boardInfo, Marker.O)).to.equal(1);
         done();
     });
 
@@ -94,7 +94,7 @@ describe('minimax evaluation function', function() {
         boardInfo.cells[1][0] = Marker.X;
         boardInfo.cells[2][0] = Marker.X;
 
-        expect(AiPlayer.evaluateScore(boardInfo, Marker.O)).to.equal(-10);
+        expect(AiPlayer.evaluateScore(boardInfo, Marker.O)).to.equal(-1);
         done();
     });
 });
