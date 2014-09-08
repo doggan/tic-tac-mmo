@@ -98,3 +98,45 @@ describe('minimax evaluation function', function() {
         done();
     });
 });
+
+describe('algorithm performance', function() {
+    var ITERATION_COUNT = 10;
+
+    it('should benchmark minimax performance for generating the entire game tree', function(done) {
+        this.timeout(0);
+
+        var boardInfo = createBoardInfo();
+
+        var totalTime = 0.0;
+        for (var i = 0; i < ITERATION_COUNT; i++) {
+            var hrstart = process.hrtime();
+            AiPlayer.doMinimax(boardInfo, Marker.X);
+            var hrend = process.hrtime(hrstart)[1] / 1000000;
+            totalTime += hrend;
+        }
+
+        var avgTime = totalTime / ITERATION_COUNT;
+        console.log('Elapsed time (minimax): ' + avgTime + ' (ms)');
+
+        done();
+    });
+
+    it('should benchmark alpha-beta pruning performance for generating the entire game tree', function(done) {
+        this.timeout(0);
+
+        var boardInfo = createBoardInfo();
+
+        var totalTime = 0.0;
+        for (var i = 0; i < ITERATION_COUNT; i++) {
+            var hrstart = process.hrtime();
+            AiPlayer.doAlphaBetaPruning(boardInfo, Marker.X);
+            var hrend = process.hrtime(hrstart)[1] / 1000000;
+            totalTime += hrend;
+        }
+
+        var avgTime = totalTime / ITERATION_COUNT;
+        console.log('Elapsed time (alpha-beta pruning): ' + avgTime + ' (ms)');
+
+        done();
+    });
+});
