@@ -1,3 +1,5 @@
+'use strict';
+
 var expect = require('chai').expect,
     util = require('./../lib/util'),
     AiPlayer = require('./../lib/ai_player');

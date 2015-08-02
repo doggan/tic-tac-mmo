@@ -5,11 +5,10 @@
   "description": "A tic-tac-toe sandbox.",
   "main": "index.js",
   "scripts": {
-    "start": "beefy index.js --cwd ./client/",
-    "test": "mocha --reporter spec",
     "gulp": "gulp",
     "lint": "gulp lint",
-    "build": "gulp browserify"
+    "build": "gulp browserify",
+    "test": "gulp test"
   },
   "keywords": [
     "tic-tac-toe"
@@ -31,12 +30,14 @@
     "compojs": "git://github.com/doggan/compojs.git"
   },
   "devDependencies": {
+    "babel": "^5.8.20",
     "babelify": "^6.1.3",
     "browser-sync": "^2.8.2",
     "browserify": "^9.0.3",
     "chai": "^1.9.1",
     "gulp": "^3.8.11",
     "gulp-jshint": "^1.11.2",
+    "gulp-mocha": "^2.1.3",
     "gulp-notify": "^2.2.0",
     "gulp-util": "^3.0.4",
     "jshint-stylish": "^1.0.1",
