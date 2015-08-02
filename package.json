@@ -6,7 +6,10 @@
   "main": "index.js",
   "scripts": {
     "start": "beefy index.js --cwd ./client/",
-    "test": "mocha --reporter spec"
+    "test": "mocha --reporter spec",
+    "gulp": "gulp",
+    "lint": "gulp lint",
+    "build": "gulp browserify"
   },
   "keywords": [
     "tic-tac-toe"
@@ -28,12 +31,22 @@
     "component-engine": "git://github.com/doggan/component-engine.git#308256f9218e9531900a93f16c0c2caed20a29c3",
     "inherits": "^2.0.1"
   },
-  "jshintConfig": {
-    "node": true,
-    "unused": true
-  },
   "devDependencies": {
+    "babelify": "^6.1.3",
+    "browser-sync": "^2.8.2",
+    "browserify": "^9.0.3",
     "chai": "^1.9.1",
-    "mocha": "^1.21.4"
+    "gulp": "^3.8.11",
+    "gulp-jshint": "^1.11.2",
+    "gulp-notify": "^2.2.0",
+    "gulp-util": "^3.0.4",
+    "jshint-stylish": "^1.0.1",
+    "lodash": "^3.10.0",
+    "map-stream": "0.0.5",
+    "mocha": "^1.21.4",
+    "pretty-hrtime": "^1.0.0",
+    "require-dir": "^0.1.0",
+    "vinyl-source-stream": "^1.1.0",
+    "watchify": "^3.3.1"
   }
 }
