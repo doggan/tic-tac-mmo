@@ -27,7 +27,8 @@
   },
   "license": "MIT",
   "dependencies": {
-    "compojs": "git://github.com/doggan/compojs.git"
+    "compojs": "git://github.com/doggan/compojs.git",
+    "three": "^0.71.0"
   },
   "devDependencies": {
     "babel": "^5.8.20",
